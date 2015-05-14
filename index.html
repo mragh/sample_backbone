@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>BB Example</title>
+
+    <style type="text/css">
+        .main {
+            padding: 5% 20% 0 20%;
+            display: block;
+            width: 400px;
+        }
+        #order-detail {
+            width: 600px;
+            border: 1px solid;
+            margin: 0;
+        }
+        #order-detail th.disabled{
+            background-color: grey;
+        }
+        #order-detail tr {
+            border: 1px solid;
+        }
+        #order-detail td {
+            text-align: right;
+        }
+        #order-detail th {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Reprocessing</h1>
+    </header>
+    <section class="main">
+        <div class="controls">
+        </div>
+        <table id="order-detail">
+            <thead>
+                <tr>
+                    <th class="disabled"></th>
+                    <th>Order Number</th>
+                    <th>Status</th>
+                    <th>Customer Name</th>
+                    <th>Total Amt</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+<script src="orderProcessing.js"></script>
+</body>
+</html>
